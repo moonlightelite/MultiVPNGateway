@@ -1,0 +1,21 @@
+rules:
+  - client: 192.168.1.50
+    namespace: tw
+    description: "Station A - Taiwan"
+    enabled: true
+  - client: 192.168.1.51
+    namespace: sg
+    description: "Station B - Singapore"
+    enabled: true
+  - client: 192.168.1.52
+    namespace: nl
+    description: "Station C - Netherlands"
+    enabled: true
+  - client: 192.168.1.53
+    namespace: kr
+    description: "Station D - South Korea"
+    enabled: true
+  - client: 192.168.1.54
+    namespace: jp
+    description: "Station E - Japan"
+    enabled: true

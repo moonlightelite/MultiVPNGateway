@@ -1,0 +1,39 @@
+[Interface]
+
+[Peer]
+PublicKey = SAio0Z0suFlRfmydzPdcn6MamqS7Mq4pSOm2YmJkLSs=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 194.233.100.154:51820
+PersistentKeepalive = 25
+[Interface]
+
+[Peer]
+PublicKey = 5p4RkybdRU5uaDi90eu4KZPTFif0lKCg4Qp6t1c4F30=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 64.238.204.18:51820
+PersistentKeepalive = 25
+[Interface]
+
+[Peer]
+PublicKey = U3dKnkOJY5P9p6kEbEDGR7+K2+4HmkKK1hTMugq2HQA=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 192.166.246.116:51820
+PersistentKeepalive = 25
+[Interface]
+
+[Peer]
+PublicKey = iW991L6XyB8LWqsmRDDazPv9abbgrKKtR3Y2SGhg/T0=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 94.156.205.10:51820
+PersistentKeepalive = 25
+[Interface]
+
+[Peer]
+PublicKey = 1GaNB9RbeGNzekcuRDcxTXvqtXWFe2K9GtUd+EjNuyI=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 212.102.47.71:51820
+PersistentKeepalive = 25
+
+# NOTE: Private keys omitted for security
+# Real configs are stored in /etc/vpn/keys/ on 192.168.1.140
+# Permissions: 0600, Owner: root
