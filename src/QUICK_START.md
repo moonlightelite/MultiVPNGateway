@@ -74,19 +74,9 @@ You need `tw.conf sg.conf nl.conf kr.conf jp.conf` (wg-quick format). Pick one:
 sudo nordvpn login          # token or browser flow
 sudo bash harvest_configs.sh
 
-# B. Pure-API download — no daemon, SSH-safe, run anywhere (then copy in)
-export NORDVPN_TOKEN="eyJ..."                  # from my.nordaccount.com → Setup → OAuth token
-#   …or:  export NORDVPN_USERNAME=you@example.com NORDVPN_PASSWORD=...
-./download_nordvpn_configs.sh                  # bash; or: node nordvpn_download.js (needs `npm install axios`)
-sudo cp wireguard_configs/*.conf /etc/vpn/keys/ && sudo chmod 600 /etc/vpn/keys/*.conf
-
-# C. Restore from a previous backup
+# B. Restore from a previous backup
 sudo /etc/vpn/vpn_namespaces.sh restore
 ```
-
-The API method (B) only makes HTTPS calls to `api.nordvpn.com` (`/oauth2/token`,
-`/users/services/credentials`, `/servers/recommendations`) — it never runs the
-NordVPN daemon, so SSH is never at risk. OAuth tokens expire after ~30 days.
 
 > If the NordVPN CLI (A) won't connect, harvest from a clean slate (tunnels down) —
 > active tunnels consume NordVPN session slots. See `RECOVERY.md` › *Validation
